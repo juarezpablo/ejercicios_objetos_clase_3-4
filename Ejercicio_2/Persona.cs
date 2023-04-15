@@ -4,35 +4,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Clase_3
+namespace Ejercicio_2
 {
     internal class Persona
     {
-        
-        public string nombre;
-        public string apellido;
-        private int legajo;
-
-        public Persona(string nombre, string apellido, int legajo)
+        public string Nombre { get; set; }//Propiedad
+        private DateTime FechaDeNacimiento //Propiedad
         {
-            this.nombre = nombre;
-            this.apellido = apellido;
-            this.legajo = legajo;
+            get { return _fechaDeNacimiento; }
+           // set { _fechaDeNacimiento = value; }  READONLY
         }
 
-        public void DarPresente()
-        {
-
-        }
+        private int Dni 
+        { get { return _dni; }  }
         
-        //public override string ToString()
-        //{
-          //  StringBuilder sb = new StringBuilder();
-            //sb.AppendLine("-------");
-            //sb.AppendLine($"Nombre: {nombre}");
-            //sb.AppendLine($"Apellido: {apellido}");
-            //sb.AppendLine();
-        //}
-        //
+        private DateTime _fechaDeNacimiento; //Atributo privado
+        private int _dni;                   //Atributo privado
+
+
+
     }
 }

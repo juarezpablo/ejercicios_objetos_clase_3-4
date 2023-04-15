@@ -40,12 +40,15 @@ namespace Clase_3
             if (monto >= 0)
             {
                 this.cantidad += monto;
+           
+                Console.WriteLine($"Cantidad: {this.cantidad.ToString()}");
             }
         }
 
         public void retirar(int monto)
         {
             this.cantidad -= monto;
+            Console.WriteLine($"Cantidad: {this.cantidad.ToString()}");
         }
 
     }

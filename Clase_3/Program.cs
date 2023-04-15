@@ -9,7 +9,7 @@ namespace Clase_3
            
             Console.WriteLine("Hello, World!");
             Cuenta nuevaCuenta = new Cuenta("Enterprise", 25);
-            nuevaCuenta.mostrar();
+            //nuevaCuenta.mostrar();
             StringBuilder xb = new StringBuilder();
             xb.AppendLine("---MENU----");
             xb.AppendLine("1 - Mostrar datos");
